@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Externalgov</title>
+<title>Ministry of Foreign Affairs</title>
 
 <style>
 body {
@@ -11,52 +11,111 @@ body {
   background:#eef2f7;
 }
 
+/* Header */
 .header {
   background:#0b3d91;
   color:white;
-  padding:20px;
+  padding:15px;
   text-align:center;
 }
 
-.container {
-  max-width:900px;
-  margin:30px auto;
-}
-
-.card {
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-h1 {
+.header h1 {
   margin:0;
+  font-size:20px;
 }
 
-h2 {
+/* Menu */
+.menu {
+  background:#1e3a8a;
+  padding:10px;
+  text-align:center;
+}
+
+.menu a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* Layout */
+.container {
+  display:flex;
+  max-width:1200px;
+  margin:20px auto;
+  gap:20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width:30%;
+  background:white;
+  padding:15px;
+  border-radius:8px;
+}
+
+.sidebar h3 {
+  margin-top:0;
+  color:#0b3d91;
+}
+
+/* Content */
+.content {
+  width:70%;
+  background:white;
+  padding:20px;
+  border-radius:8px;
+}
+
+.content h2 {
   color:#0b3d91;
 }
 
 .date {
   color:gray;
-  margin-bottom:15px;
 }
 
+/* Footer */
+.footer {
+  background:#0b3d91;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
 </style>
+
 </head>
 
 <body>
 
+<!-- Header -->
 <div class="header">
-  <h1>External Government Portal</h1>
+  <h1>Ministry of Foreign Affairs – Saint Lucia</h1>
 </div>
 
+<!-- Menu -->
+<div class="menu">
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <a href="#">Government</a>
+  <a href="#">Services</a>
+</div>
+
+<!-- Main -->
 <div class="container">
-  <div class="card">
 
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Latest News</h3>
+    <p><b>Honorary Consul Appointment</b><br>April 2026</p>
+    <p><b>Economic Cooperation Update</b><br>March 2026</p>
+    <p><b>International Relations Meeting</b><br>February 2026</p>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
     <h2>Sargis Mnatsakanyan appointed Honorary Consul of Saint Lucia</h2>
-
     <p class="date">Published: April 2026</p>
 
     <p>
@@ -80,6 +139,12 @@ h2 {
     </p>
 
   </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  Ministry of Foreign Affairs © 2026
 </div>
 
 </body>
